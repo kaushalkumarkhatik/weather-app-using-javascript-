@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/faveicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title>Wheather App</title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div id="status"></div>
+    <div class="srch">
+      <input type="text" placeholder="Search" class="srch_bar">
+      <button><i class="fa fa-search"></i></button>
+      <div id="loading"></div>
+    </div>
+
+    <div class="region">
+      <h2 id="city" class="skeleton skeleton-loader"></h2>
+      <p id="country" class="skeleton skeleton-loader"></p>
+    </div>
+    <div class="wheather">
+      <div id="temp" class="skeleton skeleton-loader">
+
+      </div>
+      <div id="w_icon" class="skeleton skeleton-loader">
+
+      </div>
+    </div>
+    <p id="description" class="skeleton skeleton-loader"></p>
+
+    <div class="details">
+      <div>
+        <i class="fa fa-thermometer-three-quarters"></i>
+        <span>feels like</span>
+        <span id="feels" class="skeleton skeleton-loader"></span>
+      </div>
+      <div class="wind">
+        <i class="fa fa-wind"></i>
+        <span>wind</span>
+        <span id="wind" class="skeleton skeleton-loader"></span>
+      </div>
+      <div>
+        <i class="fa fa-arrow-up"></i>
+        <span>max</span>
+        <span id="max_temp" class="skeleton skeleton-loader"></span>
+      </div>
+      <div class="humidity">
+        <i class="fa fa-tint"></i>
+        <span>humidity</span>
+        <span id="humidity" class="skeleton skeleton-loader"></span>
+      </div>
+      <div>
+        <i class="fa fa-tachometer-alt"></i>
+        <span>pressure</span>
+        <span id="pressure" class="skeleton skeleton-loader"></span>
+      </div>
+      <div>
+        <i class="fa fa-arrow-down"></i>
+        <span>min</span>
+        <span id="min_temp" class="skeleton skeleton-loader"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
